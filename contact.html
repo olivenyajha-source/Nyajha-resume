@@ -6,6 +6,7 @@
   <title>Contact — Nyajha Olive</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="fade-in">
   <header class="hero small">
     <h1 class="title">Contact</h1>
@@ -20,14 +21,33 @@
 
   <main class="box">
     <h2>Get in Touch</h2>
-    <form id="contact-form">
-      <label>Name<br><input type="text" name="name" required></label><br><br>
-      <label>Email<br><input type="email" name="email" required></label><br><br>
-      <label>Message<br><textarea name="message" rows="5" required></textarea></label><br><br>
+
+    <!-- Contact Form (Now fully working with Formspree) -->
+    <form id="contact-form" action="https://formspree.io/f/xjknrgnr" method="POST">
+
+      <label>
+        Name<br>
+        <input type="text" name="name" required>
+      </label><br><br>
+
+      <label>
+        Email<br>
+        <input type="email" name="email" required>
+      </label><br><br>
+
+      <label>
+        Message<br>
+        <textarea name="message" rows="5" required></textarea>
+      </label><br><br>
+
       <button type="submit">Send</button>
     </form>
+
     <p id="form-msg"></p>
-    <p>If you prefer, email me: <a href="mailto:Olivenyajha@gmail.com">Olivenyajha@gmail.com</a></p>
+
+    <p>If you prefer, email me directly: 
+      <a href="mailto:Olivenyajha@gmail.com">Olivenyajha@gmail.com</a>
+    </p>
   </main>
 
   <script src="script.js"></script>
